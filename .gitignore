@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated datasets
+data/processed/
+
+# Raw datasets
+data/raw/
+
+# Model checkpoints
+models/*.pth
+models/*.pt
+models/*.ckpt
+
+# Training outputs
+experiments/*/checkpoints/
+experiments/*/logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
