@@ -1,8 +1,8 @@
-\# CrysCo Benchmark for Poisson Ratio Prediction
+# CrysCo Benchmark for Poisson Ratio Prediction
 
 
 
-\## Overview
+## Overview
 
 
 
