@@ -22,7 +22,7 @@ The repository was prepared as part of a research study involving machine-learni
 
 
 
-\## Research Objective
+## Research Objective
 
 
 
@@ -37,42 +37,24 @@ The benchmark workflow is:
 ```text
 
 Crystal structures + target data
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;     Data preprocessing
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;  Feature and graph generation
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;      CrysCo model
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;        Model training
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;     Test-set prediction
-
-&#x20;             |
-
-&#x20;             v
-
-&#x20;     Error and outlier analysis
+             |
+             v
+   Data preprocessing
+            |
+            v
+  Feature and graph generation
+            |
+            v
+      CrysCo model
+           |
+           v
+        Model training
+             |
+             v
+    Test-set prediction
+            |
+            v 
+    Error and outlier analysis
 
 ```
 
@@ -82,7 +64,7 @@ Crystal structures + target data
 
 
 
-\## Dataset
+## Dataset
 
 
 
@@ -102,7 +84,7 @@ The usable dataset is divided into fixed training, validation, and test sets.
 
 
 
-\### Fixed Dataset Split
+### Fixed Dataset Split
 
 
 
@@ -138,11 +120,11 @@ Files:
 
 ```text
 
-crysco\_train\_ids.csv
+crysco_train_ids.csv
 
-crysco\_val\_ids.csv
+crysco_val_ids.csv
 
-crysco\_test\_ids.csv
+crysco_test_ids.csv
 
 ```
 
@@ -156,7 +138,7 @@ Using fixed split files ensures that subsequent experiments can use the same tra
 
 
 
-\## Target Data
+## Target Data
 
 
 
@@ -166,7 +148,7 @@ The cleaned Poisson-ratio target data is provided in:
 
 ```text
 
-targets/poisson\_ratio\_cleaned/
+targets/poisson_ratio_cleaned/
 
 ```
 
@@ -178,9 +160,9 @@ The directory contains:
 
 ```text
 
-poisson\_composition\_final.csv
+poisson_composition_final.csv
 
-poisson\_structural.csv
+poisson_structural.csv
 
 ```
 
@@ -194,7 +176,7 @@ These files contain the property information used in the benchmark and preproces
 
 
 
-\## CrysCo Model
+## CrysCo Model
 
 
 
@@ -204,7 +186,7 @@ The CrysCo implementation used in this benchmark is contained in:
 
 ```text
 
-crysco\_benchmark/models/
+crysco_benchmark/models/
 
 ```
 
@@ -240,9 +222,9 @@ The supporting data and utility implementations are located in:
 
 ```text
 
-crysco\_benchmark/data/
+crysco_benchmark/data/
 
-crysco\_benchmark/utils/
+crysco_benchmark/utils/
 
 ```
 
@@ -252,7 +234,7 @@ crysco\_benchmark/utils/
 
 
 
-\## Preprocessing Pipeline
+## Preprocessing Pipeline
 
 
 
@@ -274,13 +256,13 @@ Important files include:
 
 ```text
 
-data\_preparation.py
+data_preparation.py
 
-extracted\_features.py
+extracted_features.py
 
-extracted\_features\_diagnostic.py
+extracted_features_diagnostic.py
 
-graph\_dihedral.py
+graph_dihedral.py
 
 ```
 
@@ -324,7 +306,7 @@ The resulting processed dataset is stored locally as a PyTorch `.pt` file.
 
 
 
-\## Training Configuration
+## Training Configuration
 
 
 
@@ -376,7 +358,7 @@ The benchmark was trained using GPU acceleration when available. the script was 
 
 
 
-\## Benchmark Results
+## Benchmark Results
 
 
 
@@ -422,7 +404,7 @@ The main test output is:
 
 ```text
 
-crysco\_poisson\_100ep\_test\_outputs.csv
+crysco_poisson_100ep_test_outputs.csv
 
 ```
 
@@ -436,7 +418,7 @@ Training and validation outputs are also provided.
 
 
 
-\## Prediction and Error Analysis
+## Prediction and Error Analysis
 
 
 
@@ -444,7 +426,7 @@ The repository contains additional analysis of the CrysCo predictions.
 
 
 
-\### Available analysis files
+### Available analysis files
 
 
 
@@ -452,17 +434,17 @@ The repository contains additional analysis of the CrysCo predictions.
 
 results/
 
-├── best\_worst\_with\_formulas.csv
+├── best_worst_with_formulas.csv
 
-├── crysco\_poisson\_100ep\_test\_outputs.csv
+├── crysco_poisson_100ep_test_outputs.csv
 
-├── crysco\_poisson\_100ep\_train\_outputs.csv
+├── crysco_poisson_100ep_train_outputs.csv
 
-├── crysco\_poisson\_100ep\_val\_outputs.csv
+├── crysco_poisson\_100ep\_val\_outputs.csv
 
-├── outlier\_17\_full\_analysis.csv
+├── outlier_17_full_analysis.csv
 
-└── worst\_offenders\_ranked.csv
+└── worst_offenders_ranked.csv
 
 ```
 
@@ -502,7 +484,7 @@ structure\_analysis/
 
 
 
-\## Analysis Scripts
+## Analysis Scripts
 
 
 
@@ -516,11 +498,11 @@ scripts/
 
 ├── train.py
 
-├── find\_worst\_offenders.py
+├── find_worst_offenders.py
 
-├── get\_formulas\_best\_worst.py
+├── get_formulas_best_worst.py
 
-├── analyze\_outlier\_categories.py
+├── analyze_outlier_categories.py
 
 └── preprocessing/
 
@@ -534,9 +516,9 @@ Additional benchmark-specific scripts are located in the repository root:
 
 ```text
 
-Train\_crysco\_poisson\_100ep.py
+Train_crysco_poisson_100ep.py
 
-compute\_mae\_mad\_ratio.py
+compute_mae_mad_ratio.py
 
 ```
 
@@ -546,13 +528,13 @@ compute\_mae\_mad\_ratio.py
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
 ```text
 
-crysco\_benchmark/
+crysco_benchmark/
 
 │
 
@@ -564,7 +546,7 @@ crysco\_benchmark/
 
 │
 
-├── crysco\_benchmark/
+├── crysco_benchmark/
 
 │   ├── data/
 
@@ -578,11 +560,11 @@ crysco\_benchmark/
 
 │   ├── train.py
 
-│   ├── find\_worst\_offenders.py
+│   ├── find_worst_offenders.py
 
-│   ├── get\_formulas\_best\_worst.py
+│   ├── get_formulas_best_worst.py
 
-│   ├── analyze\_outlier\_categories.py
+│   ├── analyze_outlier_categories.py
 
 │   └── preprocessing/
 
@@ -590,13 +572,13 @@ crysco\_benchmark/
 
 ├── targets/
 
-│   └── poisson\_ratio\_cleaned/
+│   └── poisson_ratio_cleaned/
 
 │
 
 ├── split/
 
-│   └── poisson\_ratio/
+│   └── poisson_ratio/
 
 │
 
@@ -604,7 +586,7 @@ crysco\_benchmark/
 
 │
 
-└── structure\_analysis/
+└── structure_analysis/
 
 ```
 
@@ -614,7 +596,7 @@ crysco\_benchmark/
 
 
 
-\## Files Not Included in the Repository
+## Files Not Included in the Repository
 
 
 
@@ -622,7 +604,7 @@ Large generated files and raw crystal structures are intentionally excluded from
 
 
 
-\### Crystal structure CIF files
+### Crystal structure CIF files
 
 
 
@@ -638,7 +620,7 @@ Expected local directory:
 
 structures/
 
-└── poisson\_ratio\_final/
+└── poisson_ratio_final/
 
 ```
 
@@ -648,7 +630,7 @@ These structures were used during preprocessing to generate the graph representa
 
 
 
-\### Processed PyTorch dataset
+### Processed PyTorch dataset
 
 
 
@@ -658,7 +640,7 @@ The generated processed dataset:
 
 ```text
 
-processed/poisson\_ratio.pt
+processed/poisson_ratio.pt
 
 ```
 
@@ -672,7 +654,7 @@ It can be generated from the preprocessing pipeline using the provided preproces
 
 
 
-\### Trained model checkpoints
+### Trained model checkpoints
 
 
 
@@ -682,9 +664,9 @@ The trained model checkpoints are also not included:
 
 ```text
 
-models/crysco\_poisson\_100ep\_best.pth
+models/crysco_poisson_100ep_best.pth
 
-models/crysco\_smoke\_test.pth
+models/crysco_smoke_test.pth
 
 ```
 
@@ -702,7 +684,7 @@ The checkpoints were retained locally and are excluded from the GitHub repositor
 
 
 
-\## Reproducibility
+## Reproducibility
 
 
 
@@ -733,47 +715,12 @@ The recommended workflow is:
 ```text
 
 1\. Obtain the required CIF structures
-
-&#x20;             |
-
-&#x20;             v
-
-2\. Place structures in structures/poisson\_ratio\_final/
-
-&#x20;             |
-
-&#x20;             v
-
-3\. Use target files from targets/poisson\_ratio\_cleaned/
-
-&#x20;             |
-
-&#x20;             v
-
-4\. Run scripts/preprocessing/data\_preparation.py
-
-&#x20;             |
-
-&#x20;             v
-
-5\. Generate processed/poisson\_ratio.pt
-
-&#x20;             |
-
-&#x20;             v
-
+2\. Place structures in structures/poisson_ratio_final/
+3\. Use target files from targets/poisson_ratio_cleaned/
+4\. Run scripts/preprocessing/data_preparation.py
+5\. Generate processed/poisson_ratio.pt
 6\. Train CrysCo
-
-&#x20;             |
-
-&#x20;             v
-
 7\. Evaluate using the fixed split
-
-&#x20;             |
-
-&#x20;             v
-
 8\. Compare predictions with results/
 
 ```
@@ -784,7 +731,7 @@ The recommended workflow is:
 
 
 
-\## Software Environment
+## Software Environment
 
 
 
@@ -836,7 +783,7 @@ requirements.txt
 
 
 
-\## Important Note About Data Splits
+## Important Note About Data Splits
 
 
 
@@ -846,7 +793,7 @@ The benchmark should be interpreted using the fixed split files provided in:
 
 ```text
 
-split/poisson\_ratio/
+split/poisson_ratio/
 
 ```
 
@@ -876,7 +823,7 @@ Test:       2,342
 
 
 
-\## Purpose of the Repository
+## Purpose of the Repository
 
 
 
@@ -912,7 +859,7 @@ Large raw and generated files are intentionally kept outside the repository.
 
 
 
-\## Status
+## Status
 
 
 
