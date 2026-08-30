@@ -16,12 +16,6 @@ The purpose of this benchmark is to evaluate the performance of CrysCo on a fixe
 
 The repository was prepared as part of a research study involving machine-learning-based prediction of materials properties from crystal structures.
 
-
-
-\---
-
-
-
 ## Research Objective
 
 
@@ -72,11 +66,10 @@ The original Poisson-ratio dataset contains:
 
 
 
-\* \*\*13,057 materials\*\* in the original selected dataset.
+13,057 materials\*\* in the original selected dataset.
 
-\* \*\*13,051 structures\*\* were successfully available for the CrysCo processing pipeline.
-
-\* \*\*6 material IDs\*\* were removed during CrysCo processing. It failed in feature extraction process during data pre processing.
+13,051 structures\*\* were successfully available for the CrysCo processing pipeline.
+6 material IDs\*\* were removed during CrysCo processing. It failed in feature extraction process during data pre processing.
 
 
 
@@ -108,7 +101,7 @@ The fixed split files are provided in:
 
 ```text
 
-split/poisson\_ratio/
+split/poisson_ratio/
 
 ```
 
