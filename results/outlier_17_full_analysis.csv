@@ -1,0 +1,18 @@
+id,target,crysco_20ep,crysco_100ep,cgcnn,err_100ep,got_worse,formula,elements,n_atoms,spacegroup,density_g_cm3,volume_per_atom,rough_category
+mp-30034,0.34,-20.5804,0.3604,0.2816,0.0204,False,MgBr2,"Br,Mg",3,P-3m1,3.706,27.499,Halide
+mp-648,0.24,-6.8639,0.0885,0.2758,0.1515,False,Na2S,"Na,S",3,Fm-3m,1.889,22.868,Simple binary compound (metal+nonmetal)
+mp-1186,0.21,-6.4593,0.442,0.2637,0.232,False,ZrS2,"S,Zr",3,P-3m1,3.619,23.763,Simple binary compound (metal+nonmetal)
+mp-23157,0.41,-5.3833,-15.2475,0.3053,15.6575,True,Bi,Bi,2,C2/m,10.199,34.026,Pure elemental metal
+mp-1039154,0.5,-2.4153,-13.7797,0.2464,14.2797,True,MgBi,"Bi,Mg",2,Pm-3m,7.219,26.83,Binary intermetallic
+mp-1039368,0.32,-2.182,-14.7763,0.2672,15.0963,True,CaMg,"Ca,Mg",2,R-3m,1.632,32.745,Binary intermetallic
+mp-1008601,0.43,-1.4805,-2.6179,0.3352,3.0479,True,ZrAg2,"Ag,Zr",3,I4/mmm,9.012,18.853,Binary intermetallic
+mp-642822,0.47,-1.1566,0.8197,0.1915,0.3497,False,CaC2,"C,Ca",12,P-1,2.183,16.249,Simple binary compound (metal+nonmetal)
+mp-569416,0.19,-1.3074,0.1348,0.1119,0.0552,False,C,C,8,R-3m,1.675,11.909,Pure elemental metal
+mp-29135,0.27,-1.116,0.5465,0.2439,0.2765,False,Zr6CoAs2,"As,Co,Zr",9,P-62m,7.205,19.362,Other / complex compound
+mp-568306,0.35,-0.9895,-1.1999,0.2779,1.5499,True,Mg5Si6,"Mg,Si",11,P-1,2.438,17.956,Simple binary compound (metal+nonmetal)
+mp-571419,0.22,-1.1152,0.3397,0.2233,0.1197,False,Zr2Al4C5,"Al,C,Zr",11,R-3m,4.337,12.199,Other / complex compound
+mp-2297,0.34,-0.9621,-6.1284,0.193,6.4684,True,NdC2,"C,Nd",3,I4/mmm,5.867,15.876,Simple carbide
+mp-9888,0.23,-0.8915,-0.409,0.2402,0.639,False,Ir3Se8,"Ir,Se",11,R-3,9.182,19.865,Simple binary compound (metal+nonmetal)
+mp-570259,0.26,-0.7828,-2.3195,0.2827,2.5795,True,MgCl2,"Cl,Mg",3,P-3m1,2.307,22.839,Halide
+mp-33723,0.24,-0.7896,-0.1519,0.2865,0.3919,False,BiTeBr,"Bi,Br,Te",3,P3m1,6.316,36.5,Halide
+mp-24155,0.7,-0.3152,0.115,0.2488,0.585,False,ZrH2,"H,Zr",3,Fm-3m,5.536,9.323,Simple binary compound (metal+nonmetal)
