@@ -50,7 +50,7 @@ Crystal structures + target data
             v 
     Error and outlier analysis
 
-```
+
 
 
 
@@ -103,7 +103,6 @@ The fixed split files are provided in:
 
 split/poisson_ratio/
 
-```
 
 
 
@@ -119,7 +118,7 @@ crysco_val_ids.csv
 
 crysco_test_ids.csv
 
-```
+
 
 
 
@@ -143,7 +142,7 @@ The cleaned Poisson-ratio target data is provided in:
 
 targets/poisson_ratio_cleaned/
 
-```
+
 
 
 
@@ -157,7 +156,7 @@ poisson_composition_final.csv
 
 poisson_structural.csv
 
-```
+
 
 
 
@@ -181,7 +180,6 @@ The CrysCo implementation used in this benchmark is contained in:
 
 crysco_benchmark/models/
 
-```
 
 
 
@@ -201,7 +199,7 @@ SE.py
 
 transformer.py
 
-```
+
 
 
 
@@ -219,7 +217,7 @@ crysco_benchmark/data/
 
 crysco_benchmark/utils/
 
-```
+
 
 
 
@@ -239,7 +237,6 @@ The preprocessing scripts are located in:
 
 scripts/preprocessing/
 
-```
 
 
 
@@ -257,7 +254,7 @@ extracted_features_diagnostic.py
 
 graph_dihedral.py
 
-```
+
 
 
 
@@ -387,7 +384,7 @@ The prediction outputs are provided in:
 
 results/
 
-```
+
 
 
 
@@ -399,7 +396,7 @@ The main test output is:
 
 crysco_poisson_100ep_test_outputs.csv
 
-```
+
 
 
 
@@ -439,7 +436,7 @@ results/
 
 └── worst_offenders_ranked.csv
 
-```
+
 
 
 
@@ -469,7 +466,6 @@ Additional structural analysis is provided in:
 
 structure\_analysis/
 
-```
 
 
 
@@ -499,7 +495,7 @@ scripts/
 
 └── preprocessing/
 
-```
+
 
 
 
@@ -513,7 +509,7 @@ Train_crysco_poisson_100ep.py
 
 compute_mae_mad_ratio.py
 
-```
+
 
 
 
@@ -581,7 +577,7 @@ crysco_benchmark/
 
 └── structure_analysis/
 
-```
+
 
 
 
@@ -615,7 +611,6 @@ structures/
 
 └── poisson_ratio_final/
 
-```
 
 
 
@@ -635,7 +630,7 @@ The generated processed dataset:
 
 processed/poisson_ratio.pt
 
-```
+
 
 
 
@@ -661,7 +656,7 @@ models/crysco_poisson_100ep_best.pth
 
 models/crysco_smoke_test.pth
 
-```
+
 
 
 
@@ -685,19 +680,19 @@ To reproduce the benchmark, the following components are required:
 
 
 
-1\. The crystal structure CIF files.
+1. The crystal structure CIF files.
 
-2\. The target CSV files provided in this repository.
+2. The target CSV files provided in this repository.
 
-3\. The fixed train/validation/test split files.
+3. The fixed train/validation/test split files.
 
-4\. The preprocessing scripts.
+4. The preprocessing scripts.
 
-5\. The CrysCo model implementation.
+5. The CrysCo model implementation.
 
-6\. The required Python dependencies.
+6. The required Python dependencies.
 
-7\. The generated processed PyTorch dataset.
+7. The generated processed PyTorch dataset.
 
 
 
@@ -707,16 +702,16 @@ The recommended workflow is:
 
 ```text
 
-1\. Obtain the required CIF structures
-2\. Place structures in structures/poisson_ratio_final/
-3\. Use target files from targets/poisson_ratio_cleaned/
-4\. Run scripts/preprocessing/data_preparation.py
-5\. Generate processed/poisson_ratio.pt
-6\. Train CrysCo
-7\. Evaluate using the fixed split
-8\. Compare predictions with results/
+1. Obtain the required CIF structures
+2. Place structures in structures/poisson_ratio_final/
+3. Use target files from targets/poisson_ratio_cleaned/
+4. Run scripts/preprocessing/data_preparation.py
+5. Generate processed/poisson_ratio.pt
+6. Train CrysCo
+7. Evaluate using the fixed split
+8. Compare predictions with results/
 
-```
+
 
 
 
