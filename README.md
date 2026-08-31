@@ -36,26 +36,16 @@ Crystal Structures + Target Data
 
 ## Dataset
 
-
-
 The original Poisson-ratio dataset contains:
-
-
 
 13,057 materials\*\* in the original selected dataset.
 
 13,051 structures\*\* were successfully available for the CrysCo processing pipeline.
 6 material IDs\*\* were removed during CrysCo processing. It failed in feature extraction process during data pre processing.
 
-
-
 The usable dataset is divided into fixed training, validation, and test sets.
 
-
-
 ### Fixed Dataset Split
-
-
 
 | Split                    | Number of materials |
 
@@ -69,22 +59,13 @@ The usable dataset is divided into fixed training, validation, and test sets.
 
 | \*\*Total usable dataset\*\* |          \*\*13,051\*\* |
 
-
-
 The fixed split files are provided in:
-
-
 
 ```text
 
 split/poisson_ratio/
 
-
-
-
 Files:
-
-
 
 ```text
 
@@ -94,37 +75,19 @@ crysco_val_ids.csv
 
 crysco_test_ids.csv
 
-
-
-
-
 Using fixed split files ensures that subsequent experiments can use the same train/validation/test assignment.
-
-
 
 \---
 
-
-
 ## Target Data
 
-
-
 The cleaned Poisson-ratio target data is provided in:
-
-
 
 ```text
 
 targets/poisson_ratio_cleaned/
 
-
-
-
-
 The directory contains:
-
-
 
 ```text
 
@@ -132,36 +95,19 @@ poisson_composition_final.csv
 
 poisson_structural.csv
 
-
-
-
-
 These files contain the property information used in the benchmark and preprocessing workflow.
-
-
 
 \---
 
-
-
 ## CrysCo Model
 
-
-
 The CrysCo implementation used in this benchmark is contained in:
-
-
 
 ```text
 
 crysco_benchmark/models/
 
-
-
-
 The implementation includes:
-
-
 
 ```text
 
@@ -175,17 +121,9 @@ SE.py
 
 transformer.py
 
-
-
-
-
 The model combines graph-based representations of crystal structures with additional feature-processing components.
 
-
-
 The supporting data and utility implementations are located in:
-
-
 
 ```text
 
@@ -193,32 +131,17 @@ crysco_benchmark/data/
 
 crysco_benchmark/utils/
 
-
-
-
-
 \---
-
-
 
 ## Preprocessing Pipeline
 
-
-
 The preprocessing scripts are located in:
-
-
 
 ```text
 
 scripts/preprocessing/
 
-
-
-
 Important files include:
-
-
 
 ```text
 
@@ -230,17 +153,9 @@ extracted_features_diagnostic.py
 
 graph_dihedral.py
 
-
-
-
-
 The preprocessing pipeline converts crystal structure and property information into a PyTorch Geometric representation suitable for CrysCo training.
 
-
-
 The pipeline includes:
-
-
 
 \* crystal structure loading,
 
@@ -262,23 +177,13 @@ The pipeline includes:
 
 \* PyTorch Geometric data construction.
 
-
-
 The resulting processed dataset is stored locally as a PyTorch `.pt` file.
-
-
 
 \---
 
-
-
 ## Training Configuration
 
-
-
 The benchmark training configuration used for the 100-epoch experiment includes:
-
-
 
 | Parameter             |             Value |
 
@@ -310,31 +215,19 @@ The benchmark training configuration used for the 100-epoch experiment includes:
 
 | EGAT layers           |                 5 |
 
-| Pooling               |   global\_add\_pool |
+| Pooling               |   global_add_pool |
 
 | Pooling order         |             early |
 
-
-
 The benchmark was trained using GPU acceleration when available. the script was Train\_crysco\_poisson\_100ep.py
-
-
 
 \---
 
-
-
 ## Benchmark Results
-
-
 
 The 100-epoch CrysCo benchmark was evaluated on the fixed test set containing \*\*2,342 materials\*\*.
 
-
-
 The principal test-set metrics obtained were:
-
-
 
 | Metric        |       Value |
 
@@ -350,51 +243,27 @@ The principal test-set metrics obtained were:
 
 | MAE / MAD     | \*\*3.621145\*\* |
 
-
-
 The prediction outputs are provided in:
-
-
 
 ```text
 
 results/
 
-
-
-
-
 The main test output is:
-
-
 
 ```text
 
 crysco_poisson_100ep_test_outputs.csv
 
-
-
-
-
 Training and validation outputs are also provided.
-
-
 
 \---
 
-
-
 ## Prediction and Error Analysis
-
-
 
 The repository contains additional analysis of the CrysCo predictions.
 
-
-
 ### Available analysis files
-
-
 
 ```text
 
@@ -412,13 +281,7 @@ results/
 
 └── worst_offenders_ranked.csv
 
-
-
-
-
 These files were used to investigate:
-
-
 
 \* largest prediction errors,
 
@@ -432,30 +295,17 @@ These files were used to investigate:
 
 \* categories of structures associated with poor predictions.
 
-
-
 Additional structural analysis is provided in:
-
-
 
 ```text
 
 structure\_analysis/
 
-
-
-
 \---
-
-
 
 ## Analysis Scripts
 
-
-
 The main analysis scripts are:
-
-
 
 ```text
 
@@ -471,13 +321,7 @@ scripts/
 
 └── preprocessing/
 
-
-
-
-
 Additional benchmark-specific scripts are located in the repository root:
-
-
 
 ```text
 
@@ -485,17 +329,9 @@ Train_crysco_poisson_100ep.py
 
 compute_mae_mad_ratio.py
 
-
-
-
-
 \---
 
-
-
 ## Repository Structure
-
-
 
 ```text
 
@@ -553,33 +389,17 @@ crysco_benchmark/
 
 └── structure_analysis/
 
-
-
-
-
 \---
-
-
 
 ## Files Not Included in the Repository
 
-
-
 Large generated files and raw crystal structures are intentionally excluded from GitHub.
-
-
 
 ### Crystal structure CIF files
 
-
-
 The original CIF structures are not included.
 
-
-
 Expected local directory:
-
-
 
 ```text
 
@@ -587,44 +407,23 @@ structures/
 
 └── poisson_ratio_final/
 
-
-
-
 These structures were used during preprocessing to generate the graph representations required by CrysCo.
-
-
 
 ### Processed PyTorch dataset
 
-
-
 The generated processed dataset:
-
-
 
 ```text
 
 processed/poisson_ratio.pt
 
-
-
-
-
 is not included because of its large file size (approximately \*\*397 MB\*\*).
-
-
 
 It can be generated from the preprocessing pipeline using the provided preprocessing scripts.
 
-
-
 ### Trained model checkpoints
 
-
-
 The trained model checkpoints are also not included:
-
-
 
 ```text
 
@@ -632,29 +431,15 @@ models/crysco_poisson_100ep_best.pth
 
 models/crysco_smoke_test.pth
 
-
-
-
-
 The main 100-epoch checkpoint is approximately \*\*149 MB\*\*.
-
-
 
 The checkpoints were retained locally and are excluded from the GitHub repository to keep the repository lightweight.
 
-
-
 \---
-
-
 
 ## Reproducibility
 
-
-
 To reproduce the benchmark, the following components are required:
-
-
 
 1. The crystal structure CIF files.
 
@@ -670,11 +455,7 @@ To reproduce the benchmark, the following components are required:
 
 7. The generated processed PyTorch dataset.
 
-
-
 The recommended workflow is:
-
-
 
 ```text
 
@@ -687,21 +468,11 @@ The recommended workflow is:
 7. Evaluate using the fixed split
 8. Compare predictions with results/
 
-
-
-
-
 \---
-
-
 
 ## Software Environment
 
-
-
 The benchmark was developed and tested using Python and the following major scientific and machine-learning packages:
-
-
 
 ```text
 
@@ -729,11 +500,7 @@ Matplotlib
 
 ```
 
-
-
 The main dependencies are listed in:
-
-
 
 ```text
 
@@ -741,19 +508,11 @@ requirements.txt
 
 ```
 
-
-
 \---
-
-
 
 ## Important Note About Data Splits
 
-
-
 The benchmark should be interpreted using the fixed split files provided in:
-
-
 
 ```text
 
@@ -761,15 +520,9 @@ split/poisson_ratio/
 
 ```
 
-
-
 These files were prepared to maintain a consistent train/validation/test assignment for model comparison.
 
-
-
 The CrysCo usable dataset contains 13,051 structures, consisting of:
-
-
 
 ```text
 
@@ -781,19 +534,11 @@ Test:       2,342
 
 ```
 
-
-
 \---
-
-
 
 ## Purpose of the Repository
 
-
-
 This repository is intended to provide a transparent record of the CrysCo Poisson-ratio benchmark, including:
-
-
 
 \* model implementation,
 
@@ -813,23 +558,13 @@ This repository is intended to provide a transparent record of the CrysCo Poisso
 
 \* structural analysis.
 
-
-
 Large raw and generated files are intentionally kept outside the repository.
-
-
 
 \---
 
-
-
 ## Status
 
-
-
 \*\*Benchmark status:\*\* Completed for the 100-epoch CrysCo Poisson-ratio experiment.
-
-
 
 Further analysis and comparison with other graph neural network models may be added as the research progresses.
 
