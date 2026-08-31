@@ -9,6 +9,7 @@ The repository was prepared as part of a research study involving machine-learni
 
 The primary objective is to benchmark the CrysCo model for crystal-structure-based prediction of Poisson ratio.
 The benchmark workflow is:
+
 Crystal structures + target data
             |
              
