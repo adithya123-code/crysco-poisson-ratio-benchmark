@@ -1,13 +1,6 @@
 # CrysCo Benchmark for Poisson Ratio Prediction
 ## Overview
-
-
-
 This repository contains the code, preprocessing pipeline, fixed dataset splits, target data, prediction outputs, and error analysis used to benchmark the \*\*CrysCo (Crystal Structure-based model)\*\* for predicting the \*\*Poisson ratio\*\* of crystalline materials.
-
-
-
-
 The purpose of this benchmark is to evaluate the performance of CrysCo on a fixed Poisson-ratio dataset and provide a reproducible record of the preprocessing, model configuration, training outputs, and prediction analysis.
 
 
