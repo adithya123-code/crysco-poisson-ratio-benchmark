@@ -28,7 +28,7 @@ The benchmark workflow is:
 
 
 
-```text
+
 
 Crystal structures + target data
              |
