@@ -254,6 +254,10 @@ crysco_poisson_100ep_test_outputs.csv
 ```
 Training and validation outputs are also provided.
 
+```text
+crysco_poisson_100ep_train_outputs.csv
+crysco_poisson_100ep_val_outputs.csv
+```
 ## Prediction and Error Analysis
 
 The repository contains additional analysis of the CrysCo predictions.
