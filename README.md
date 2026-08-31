@@ -10,6 +10,7 @@ This repository contains the code, preprocessing pipeline, fixed dataset splits,
 
 
 
+
 The purpose of this benchmark is to evaluate the performance of CrysCo on a fixed Poisson-ratio dataset and provide a reproducible record of the preprocessing, model configuration, training outputs, and prediction analysis.
 
 
