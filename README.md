@@ -129,9 +129,7 @@ The supporting data and utility implementations are located in:
 crysco_benchmark/data/
 
 crysco_benchmark/utils/
-
-\---
-
+```
 ## Preprocessing Pipeline
 
 The preprocessing scripts are located in:
@@ -139,7 +137,7 @@ The preprocessing scripts are located in:
 ```text
 
 scripts/preprocessing/
-
+```
 Important files include:
 
 ```text
@@ -151,7 +149,7 @@ extracted_features.py
 extracted_features_diagnostic.py
 
 graph_dihedral.py
-
+```
 The preprocessing pipeline converts crystal structure and property information into a PyTorch Geometric representation suitable for CrysCo training.
 
 The pipeline includes:
@@ -178,7 +176,7 @@ The pipeline includes:
 
 The resulting processed dataset is stored locally as a PyTorch `.pt` file.
 
-\---
+
 
 ## Training Configuration
 
@@ -218,9 +216,9 @@ The benchmark training configuration used for the 100-epoch experiment includes:
 
 | Pooling order         |             early |
 
-The benchmark was trained using GPU acceleration when available. the script was Train\_crysco\_poisson\_100ep.py
+The benchmark was trained using GPU acceleration when available. the script was Train_crysco_poisson_100ep.py
 
-\---
+
 
 ## Benchmark Results
 
@@ -247,16 +245,14 @@ The prediction outputs are provided in:
 ```text
 
 results/
-
+```
 The main test output is:
 
 ```text
 
 crysco_poisson_100ep_test_outputs.csv
-
+```
 Training and validation outputs are also provided.
-
-\---
 
 ## Prediction and Error Analysis
 
@@ -279,7 +275,7 @@ results/
 ├── outlier_17_full_analysis.csv
 
 └── worst_offenders_ranked.csv
-
+```
 These files were used to investigate:
 
 \* largest prediction errors,
@@ -298,9 +294,9 @@ Additional structural analysis is provided in:
 
 ```text
 
-structure\_analysis/
+structure_analysis/
+```
 
-\---
 
 ## Analysis Scripts
 
@@ -319,7 +315,7 @@ scripts/
 ├── analyze_outlier_categories.py
 
 └── preprocessing/
-
+```
 Additional benchmark-specific scripts are located in the repository root:
 
 ```text
@@ -327,8 +323,8 @@ Additional benchmark-specific scripts are located in the repository root:
 Train_crysco_poisson_100ep.py
 
 compute_mae_mad_ratio.py
+```
 
-\---
 
 ## Repository Structure
 
@@ -387,8 +383,8 @@ crysco_benchmark/
 │
 
 └── structure_analysis/
+```
 
-\---
 
 ## Files Not Included in the Repository
 
@@ -405,7 +401,7 @@ Expected local directory:
 structures/
 
 └── poisson_ratio_final/
-
+```
 These structures were used during preprocessing to generate the graph representations required by CrysCo.
 
 ### Processed PyTorch dataset
@@ -419,7 +415,7 @@ processed/poisson_ratio.pt
 is not included because of its large file size (approximately \*\*397 MB\*\*).
 
 It can be generated from the preprocessing pipeline using the provided preprocessing scripts.
-
+```
 ### Trained model checkpoints
 
 The trained model checkpoints are also not included:
@@ -429,12 +425,12 @@ The trained model checkpoints are also not included:
 models/crysco_poisson_100ep_best.pth
 
 models/crysco_smoke_test.pth
-
+```
 The main 100-epoch checkpoint is approximately \*\*149 MB\*\*.
 
 The checkpoints were retained locally and are excluded from the GitHub repository to keep the repository lightweight.
 
-\---
+
 
 ## Reproducibility
 
@@ -466,8 +462,8 @@ The recommended workflow is:
 6. Train CrysCo
 7. Evaluate using the fixed split
 8. Compare predictions with results/
+```
 
-\---
 
 ## Software Environment
 
@@ -507,7 +503,7 @@ requirements.txt
 
 ```
 
-\---
+
 
 ## Important Note About Data Splits
 
@@ -533,7 +529,7 @@ Test:       2,342
 
 ```
 
-\---
+
 
 ## Purpose of the Repository
 
@@ -559,7 +555,7 @@ This repository is intended to provide a transparent record of the CrysCo Poisso
 
 Large raw and generated files are intentionally kept outside the repository.
 
-\---
+
 
 ## Status
 
