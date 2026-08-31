@@ -1,7 +1,4 @@
 # CrysCo Benchmark for Poisson Ratio Prediction
-
-
-
 ## Overview
 
 
@@ -32,22 +29,22 @@ The benchmark workflow is:
 
 Crystal structures + target data
             |
-             v
+             
    Data preprocessing
             |
-            v
+          
   Feature and graph generation
             |
-            v
+           
       CrysCo model
            |
-           v
+          
         Model training
              |
-             v
+             
     Test-set prediction
             |
-            v 
+           
     Error and outlier analysis
 
 
