@@ -97,9 +97,7 @@ poisson_composition_final.csv
 poisson_structural.csv
 
 These files contain the property information used in the benchmark and preprocessing workflow.
-
-\---
-
+```
 ## CrysCo Model
 
 The CrysCo implementation used in this benchmark is contained in:
@@ -107,7 +105,7 @@ The CrysCo implementation used in this benchmark is contained in:
 ```text
 
 crysco_benchmark/models/
-
+```
 The implementation includes:
 
 ```text
@@ -123,7 +121,7 @@ SE.py
 transformer.py
 
 The model combines graph-based representations of crystal structures with additional feature-processing components.
-
+```
 The supporting data and utility implementations are located in:
 
 ```text
