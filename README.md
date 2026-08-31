@@ -30,9 +30,8 @@ The benchmark workflow is:
 
 
 
-
 Crystal structures + target data
-             |
+/             |
              v
    Data preprocessing
             |
