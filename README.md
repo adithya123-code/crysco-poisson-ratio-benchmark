@@ -45,11 +45,14 @@ The original Poisson-ratio dataset contains:
 
 The usable dataset is divided into fixed training, validation, and test sets.
 
+
 ### Fixed Dataset Split
+
+A fixed train/validation/test split was used for the Poisson ratio benchmark to ensure reproducibility and enable fair comparison between experiments.
 
 | Split                    | Number of materials |
 
-| ------------------------ | ------------------: |
+| :------------------------ | ------------------: |
 
 | Training                 |               9,404 |
 
@@ -57,7 +60,7 @@ The usable dataset is divided into fixed training, validation, and test sets.
 
 | Test                     |               2,342 |
 
-| \*\*Total usable dataset\*\* |          \*\*13,051\*\* |
+| **Total usable dataset ** | **13,051** |
 
 The fixed split files are provided in:
 
