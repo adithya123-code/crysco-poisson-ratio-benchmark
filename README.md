@@ -79,7 +79,6 @@ crysco_test_ids.csv
 
 Using fixed split files ensures that subsequent experiments can use the same train/validation/test assignment.
 ```
-\---
 
 ## Target Data
 
@@ -88,7 +87,7 @@ The cleaned Poisson-ratio target data is provided in:
 ```text
 
 targets/poisson_ratio_cleaned/
-
+```
 The directory contains:
 
 ```text
