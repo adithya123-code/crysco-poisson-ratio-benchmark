@@ -8,28 +8,29 @@ The repository was prepared as part of a research study involving machine-learni
 ## Research Objective
 
 The primary objective is to benchmark the CrysCo model for crystal-structure-based prediction of Poisson ratio.
-The benchmark workflow is:
+## Benchmark Workflow
 
-Crystal structures + target data
-            |
-             
-   Data preprocessing
-            |
-          
-  Feature and graph generation
-            |
-           
-      CrysCo model
-           |
-          
-        Model training
-             |
-             
-    Test-set prediction
-            |
-           
-    Error and outlier analysis
-\---
+```text
+Crystal Structures + Target Data
+                |
+                v
+       Data Preprocessing
+                |
+                v
+  Feature & Graph Generation
+                |
+                v
+          CrysCo Model
+                |
+                v
+        Model Training
+                |
+                v
+       Test-Set Prediction
+                |
+                v
+    Error & Outlier Analysis
+```
 
 
 
