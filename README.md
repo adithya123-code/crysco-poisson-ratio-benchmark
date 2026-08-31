@@ -68,9 +68,8 @@ The fixed split files are provided in:
 
 split/poisson_ratio/
 
-Files:
+The directory contains:
 
-```text
 
 crysco_train_ids.csv
 
